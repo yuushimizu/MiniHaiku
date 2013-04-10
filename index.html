@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta id="meta-description" name="description" content="ミニハイク：主にiPhoneやAndroid向けの非公式な簡易版「はてなハイク」" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+	<div class="haiku-logo">
+	  <a id="haiku-logo-image"></a>
+	</div>
+	<div id="header-menu"></div>
+	<div class="footer-of-header"></div>
+      </div>
+      <div id="subtitle" class="subtitle-none">
+	<h1 class="subtitle-label"><a id="subtitle-link"><span id="subtitle-icon"></span><span id="subtitle-text"></span></a></h1>
+	<div id="subtitle-keyword-mode-link"><a id="keyword-mode-link" href="javascript:void(0)"></a></div>
+	<div id="switcher-links"></div>
+      </div>
+      <form id="post-form" method="post" class="post-form">
+	<a id="show-form-link" href="javascript:void(0)" onclick="javascript:showPostForm();return false;"></a>
+	<div id="post-form-area" class="post-form-area">
+	  <input class="text-field" type="text" name="keyword" id="post-form-keyword" />
+	  <textarea class="text-area post-form-status" name="status" id="post-form-status"></textarea>
+	  <input class="button" type="submit" name="submit_button" value="Haiku!" />
+	  <input type="hidden" name="source" />
+	</div>
+      </form>
+      <div id="entry-list"></div>
+      <div class="footer loading-image" id="loading-image"></div>
+      <div class="footer error-message" id="footer-error"></div>
+      <a class="footer" id="next-button" href="javascript:void(0)" onclick="javascript:openNext();return false;"><div class="next-button-image"><div><span></span></div></div></a>
+    </div>
+    <div id="sub"></div>
+    <noscript>
+      <div class="noscript error-message">
+	<p>Java Scriptが無効になっています。</p>
+	<p>(Java Script is disabled on your browser.)</p>
+      </div>
+    </noscript>
+    <script type="text/javascript" src="scripts/hatena-haiku"></script>
+    <script type="text/javascript">
+      window.onload = initialize;
+    </script>
+  </body>
+</html>
+<!-- <script type='text/javascript' src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script> -->

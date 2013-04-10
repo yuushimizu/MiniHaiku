@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+img {
+    border: none;
+}
+
+body {
+    font-family: "arial", "helvetica", "sans-serif";
+    background-color: #fff;
+    color: #000;
+}
+
+input, textarea {
+    font-size: 0.9em;
+}
+
+#main {
+    display: none;
+}
+
+#header {
+    width: 100%;
+    text-align: center;
+}
+
+#haiku-logo-image {
+    width: 169px;
+    height: 42px;
+    display: block;
+    margin-left: 1em;;
+    background: url("../images/sprite.png") no-repeat 0 -33px;
+    float: left;
+}
+
+#header-menu {
+    margin-top: 1.2em;
+    margin-right: 0.5em;
+    float: right;
+}
+
+#header-menu a {
+    color: #b36b85;
+    font-size: 90%;
+    text-decoration: none;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.footer-of-header {
+    clear: both;
+}
+
+.search-keyword-form {
+    color: #6b985d;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.search-keyword-form .text-field {
+    width: 14em;
+    margin-left: 6px;
+    margin-right: 4px;
+}
+
+.subtitle {
+    clear: both;
+    width: 100%;
+}
+
+.subtitle-label {
+    font-size: 120%;
+}
+
+.subtitle-none {
+    height: 1px;
+    background-color: #cccccc;
+}
+
+.subtitle-recent, .subtitle-user, .subtitle-keyword {
+    padding: 0.2em 0.2em 0 0.2em;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.subtitle-recent {
+    background-color: #6b8ea5;
+}
+
+.subtitle-user {
+    background-color: #d07c7a;
+}
+
+.subtitle-keyword {
+    background-color: #7ba86d;
+}
+
+#subtitle-link {
+    margin-left: 0.2em;
+}
+
+#subtitle-link, #keyword-mode-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+#subtitle-link:hover, #keyword-mode-link:hover {
+    text-decoration: underline;
+}
+
+#subtitle-keyword-mode-link {
+    text-align: right;
+    margin-top: 0.2em;
+    padding-top: 0.25em;
+}
+
+#keyword-mode-link {
+    font-size: 90%;
+    padding-right: 0.2em;
+}
+
+#switcher-links {
+    margin-top: 0.8em;
+    padding-bottom: 0.3em;
+    text-align: right;
+}
+
+.switcher-link {
+    padding: 0.2em 1em 0.2em 1em;
+    margin: 0 0.2em 0 0.2em;
+    font-size: 90%;
+}
+
+.switcher-link-selected {
+    background-color: #fff;
+    padding-bottom: 0.4em;
+    text-decoration: none;
+}
+
+.switcher-link-user {
+    color: #b06c6a;
+ }
+
+.switcher-link-unselected-user {
+    background-color: #fdd;
+}
+
+.switcher-link-keyword {
+    color: #5b884d;
+}
+
+.switcher-link-unselected-keyword {
+    background-color: #dfd;
+}
+
+.post-form {
+    border-bottom: solid 1px #cccccc;
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#show-form-link {
+    border: solid 1px #bbc4cd;
+    padding: 2px 15px 2px 15px;
+    text-decoration: none;
+    font-size: 80%;
+    color: #5f7199;
+    background-color: #fff;
+    display: none;
+}
+
+.post-form-area {
+    display: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-hint {
+    color: #888888;
+}
+
+.post-form-area input, .post-form-area textarea, .reply-form div  * {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.text-field, .button, .text-area {
+    border: solid 1px #99a2ab;
+    background-color: #fff;
+}
+
+.button {
+    padding: 2px 1em 2px 1em;
+    font-size: 80%;
+}
+
+#post-form-keyword, .post-form-status, .text-field {
+    padding: 3px;
+}
+
+#post-form-keyword {
+    margin-bottom: 0.7em;
+}
+
+#post-form-keyword, .post-form-status {
+    display: block;
+    width: 100%;
+}
+
+.post-form-status {
+    height: 6em;
+}
+
+.post-form-area .button, .reply-form .button {
+    font-weight: bold;
+}
+
+.entry, .star-comment-list-row {
+    padding: 5px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.entry-content {
+    float: left;
+    width: 100%;
+    margin-right: -36px;
+}
+
+img.profile-image {
+    float: left;
+    width: 32px;
+    height: 32px;
+    padding: 1px;
+    border: solid 1px #cccccc;
+}
+
+.entry-body {
+    margin-left: 46px;
+    margin-right: 36px;
+}
+
+.ugomemo-thumbnail {
+    border: solid 1px #ccc;
+    background-color: #eee;
+    width: 128px;
+    padding: 4px;
+}
+
+.nicovideo-thumbnail {
+    border: solid 2px #000;
+}
+
+.entry-title {
+    font-size: 90%;
+    display: inline;
+    margin-right: 0.2em;
+}
+
+.entry-title a {
+    color: #467237;
+}
+
+.entry-show-star-comments {
+    display: none;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.entry-show-star-comments-icon-active {
+    background: url("../images/sprite.png") no-repeat 0 -1px;
+}
+
+.entry-show-star-comments-icon-inactive {
+    background: url("../images/sprite.png") no-repeat 0 -173px;
+}
+
+.entry-show-star-comments-icon-active, .entry-show-star-comments-icon-inactive {
+    width: 16px;
+    height: 16px;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.show-star-link button {
+    cursor: pointer;
+}
+
+.star-loading {
+    vertical-align: middle;
+}
+
+.stars {
+    font-size: 90%;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 14px;
+}
+
+.stars-yellow {
+    color: #ffa400;
+}
+
+.stars-green {
+    color: #00a000;
+}
+
+.stars-blue {
+    color: #0080ff;
+}
+
+.stars-red {
+    color: #ff2400;
+}
+
+.stars-purple {
+    color: #e000e0;
+}
+
+.star { /* see makeStarNode */
+    width: 15px;
+    height: 14px;
+    border: none;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.star-yellow {
+    background: url("../images/sprite.png") no-repeat 0 -18px;
+}
+
+.star-green {
+    background: url("../images/sprite.png") no-repeat -32px -18px;
+}
+
+.star-blue {
+    background: url("../images/sprite.png") no-repeat -64px -18px;
+}
+
+.star-red {
+    background: url("../images/sprite.png") no-repeat -96px -18px;
+}
+
+.star-purple {
+    background: url("../images/sprite.png") no-repeat -128px -18px;
+}
+
+.entry-in-reply-to {
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin-left: 2px;
+    margin-right: 0.25em;
+    background: url("../images/sprite.png") no-repeat 0 -131px;
+    cursor: pointer;
+}
+
+.entry-in-reply-to-user {
+    float: left;
+}
+
+.entry-text {
+    font-weight: normal;
+    font-size: 90%;
+    line-height: 140%;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.entry-text a {
+    color: #000;
+}
+
+.entry-text a img {
+    max-height: 300px;
+}
+
+.entry-text a.keyword, .keyword-list-row-link {
+    color: #467237;
+}
+
+.entry-text a.user, .keyword-user-entries a {
+    color: #b36b85;
+}
+
+.entry-text img {
+    max-width: 100%;
+}
+
+.entry-info {
+    font-weight: normal;
+    font-size: 80%;
+    color: #999999;
+    word-break: break-all;
+}
+
+.entry-info * {
+    margin-left: 0.4em;
+}
+
+.entry-info a, .star-list-user-link {
+    text-decoration: none;
+}
+
+.entry-info-link, .star-list-user {
+    color: #b36b85;
+}
+
+.entry-info-user-id, .star-list-user {
+    font-weight: bold;
+}
+
+.entry-delete-button {
+    background: url("../images/sprite.png") no-repeat 0 -92px;
+    width: 11px;
+    height: 11px;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.small-icon {
+    margin-left: 3px;
+    margin-right: 3px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.entry-buttons {
+    float: right;
+    width: 34px;
+}
+
+.entry-buttons a {
+    display: block;
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 26px;
+}
+
+.add-star-link {
+    background-position: 0 -146px;
+}
+
+.reply-link {
+    background-position: 0 -104px;
+}
+
+.entry-footer {
+    clear: both;
+}
+
+.footer {
+    text-align: center;
+    height: 48px;
+    display: none;
+}
+
+.error-message {
+    font-weight: bold;
+    color: #b36b85;
+}
+
+.footer .error-message {
+    line-height: 48px;
+}
+
+.loading-image {
+    display: none;
+    background: url("../images/loading.gif") center no-repeat;
+}
+
+.next-button-image {
+    cursor: pointer;
+    height: 50%;
+    width: 28px;
+    padding-top: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.next-button-image div {
+    height: 15px;
+    background: url("../images/sprite.png") no-repeat 0 -76px;
+}
+
+.next-button-image span {
+    display: none;
+}
+
+#sub {
+    display: none;
+    padding: 5px;
+}
+
+.sub-content {
+    margin-top: 10px;
+}
+
+.star-list-row {
+    margin-top: 5px;
+}
+
+.star-list-user {
+    margin-right: 3px;
+}
+
+.star-comment-list-row {
+    padding-left: 28px;
+}
+
+.star-comment-user-link {
+    margin-left: -24px;
+}
+
+#star-comment-list form textarea {
+    padding: 0.2em;
+    height: 4em;
+    width: 90%;
+}
+
+#star-comment-list form * {
+    margin-top: 0.3em;
+    margin-left: 3px;
+}
+
+.star-comment-delete-button {
+    background: url("../images/sprite.png") no-repeat 0 -190px;
+    margin-left: 0.5em;
+    width: 11px;
+    height: 11px;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.keyword-user-entries a {
+    margin-left: 0.2em;
+}
+
+.keyword-list-row {
+    margin-top: 0.5em;
+}
+
+#dialog-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(style=0, opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 100;
+}
+
+.dialog {
+    position: absolute;
+    left: 50%;
+    width: 14em;
+    margin-left: -7em;
+    padding: 0.5em;
+    z-index: 101;
+    border: solid 0.1em #000;
+    background-color: #fff;
+}
+
+.dialog h3 {
+    font-size: 100%;
+    font-weight: bold;
+    color: #d07c7a;
+}
+
+.dialog form {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.dialog .text-field, .settings .text-field {
+    margin-top: 0.1em;
+    margin-bottom: 0.8em;
+    width: 12em;
+}
+
+.dialog .button {
+    margin-right: 1em;
+}
+
+.dialog .form-label, .settings .form-label {
+    font-size: 90%;
+    color: #6b985b;
+}
+
+.dialog a, .settings a {
+    font-size: 80%;
+}
+
+.settings select {
+    width: 12em;
+    margin-top: 0.5em;
+}
+
+.settings select option {
+    padding: 0.2em;
+}
+
+.settings #settings-login-form .button {
+    margin-bottom: 2em;
+    margin-top: 0.75em;
+}
+
+.settings #settings-ng-user-name {
+    margin-right: 0.25em;
+    margin-bottom: 0;
+}
+
+.settings #settings-ng-user-remove-button {
+    margin-top: 0.5em;
+}
+
+.noscript {
+    padding-top:1em;
+    line-height: 1.5em;
+    text-align:center;
+}

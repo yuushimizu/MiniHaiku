@@ -1,0 +1,12 @@
+.sprite-comment_active { background-position: 0 -1px; } 
+.sprite-star { background-position: 0 -18px; } 
+.sprite-haiku_logo { background-position: 0 -33px; } 
+.sprite-icon-quickpager { background-position: 0 -76px; } 
+.sprite-icon-delete-user { background-position: 0 -92px; } 
+.sprite-reply { background-position: 0 -103px; } 
+.sprite-reply-mini { background-position: 0 -130px; } 
+.sprite-add-star { background-position: 0 -145px; } 
+.sprite-star-green { background-position: -32px -18px; } 
+.sprite-star-blue { background-position: -64px -18px; } 
+.sprite-star-red { background-position: -96px -18px; } 
+.sprite-comment_deactive { background-position: 0 -172; }
